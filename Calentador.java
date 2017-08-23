@@ -1,10 +1,12 @@
 class Calentador
 {
     int temperatura;
+    int incremento;
     
     Calentador()
     {
         temperatura = 15;    
+        incremento = 3;
     }
     
     void calentar()
@@ -21,4 +23,5 @@ class Calentador
     {
        return temperatura;
     }
+    
 }

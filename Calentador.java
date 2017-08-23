@@ -11,12 +11,18 @@ class Calentador
     
     void calentar()
     {
-        temperatura = temperatura + 5;
+        if(temperatura < 30)
+        {
+            temperatura = temperatura + incremento;
+        }
     }
     
     void enfriar()
     {
-        temperatura = temperatura - 5;
+        if(temperatura  > -10)
+        {
+            temperatura = temperatura - incremento;
+        }
     }
     
     int visualizarTemperatura()

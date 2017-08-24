@@ -2,8 +2,10 @@ class Calentador
 {
     private int temperatura;
     private int incremento;
-    
-    Calentador()
+    private int min;
+    private int max;
+        
+    Calentador(int min, int max)
     {
         temperatura = 15;    
         incremento = 3;
@@ -11,7 +13,7 @@ class Calentador
     
     public void calentar()
     {
-        if(temperatura < 30)
+        if( temperatura +incremento < max)
         {
             temperatura = temperatura + incremento;
         }
@@ -19,7 +21,7 @@ class Calentador
     
     public void enfriar()
     {
-        if(temperatura - incremento  > -10)
+        if(temperatura -incremento > min)
         {
             temperatura = temperatura - incremento;
         }
